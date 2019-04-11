@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "build": "webpack --mode development"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "homepage": "https://github.com/jsheng2011/react-library-test#readme",
   "dependencies": {
     "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
