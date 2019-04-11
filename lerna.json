@@ -1,0 +1,13 @@
+{
+  "packages": [
+    "src/*"
+  ],
+  "commands": {
+    "publish": {
+      "ignore": [
+        
+      ]
+    }
+  },
+  "version": "independent"
+}
