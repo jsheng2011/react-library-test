@@ -8,7 +8,7 @@
     "build:prod": "webpack --config ./build/webpack.config.js --mode production",
     "build:dev": "webpack --config ./build/webpack.config.js --mode development",
     "dev": "webpack-dev-server --config ./build/webpack.config.js --mode development",
-    "deploy": "npm run build:prod && git diff && npm run publish"
+    "deploy": "npm run build:prod && npm -v && git diff && npm run publish"
   },
   "repository": {
     "type": "git",
