@@ -1,10 +1,10 @@
 {
   "packages": [
-    "src/*"
+    "src/**/*"
   ],
-  "commands": {
+  "command": {
     "publish": {
-      "ignore": [
+      "ignoreChanges": [
         
       ]
     }
