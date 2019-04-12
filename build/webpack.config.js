@@ -67,5 +67,8 @@ module.exports = {
         disableHostCheck: true,
         host: '0.0.0.0'
     },
-    devtool: 'source-map'
+    devtool: 'source-map',
+    output:{
+        publicPath: '.'
+    }
 };
