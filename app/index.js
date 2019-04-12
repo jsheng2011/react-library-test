@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import {button} from '@jsh/button'
 
 
 const App = () => {
