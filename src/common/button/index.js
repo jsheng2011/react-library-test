@@ -4,6 +4,6 @@ import React, { Component } from 'react'
 export default class Button extends Component{
 
     render(){
-        <button>{this.props.children} changchange</button>
+        <button>{this.props.children} chang 111</button>
     }
 }
