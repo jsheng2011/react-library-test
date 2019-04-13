@@ -7,7 +7,7 @@ before_install:
   - printf '//registry.npmjs.org/:_authToken = %s\n' "$NPM_AUTH_TOKEN" > ~/.npmrc
   - git config --global user.email ${GITHUB_EMAIL}
   - git config --global user.name ${GITHUB_USER}
-  - git remote set-url origin "https://${GITHUB_TOKEN}@github.com/YOUR/PROJECT.git"
+  - git remote set-url origin "https://${GITHUB_TOKEN}@github.com/jsheng2011/react-library-test.git"
 
 before_script:
   - npm install
