@@ -4,7 +4,9 @@ node_js:
   - "9"
 
 before_install:
-  - npm i -g npm@5.6.0
+  - printf '_auth = %s\n' "$NPM_AUTH_TOKEN" > ~/.npmrc
+  - printf 'email = %s\n' "$NPM_EMAIL" >> ~/.npmrc
+  - printf 'always-auth = true\n' >> ~/.npmrc
 
 before_script:
   - npm install
