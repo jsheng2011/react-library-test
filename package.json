@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "publish": "lerna publish version patch --yes  --message 'update version package and deploy [ci skip]'",
+    "publish": "lerna publish --canary --yes  --message 'update version package and deploy [ci skip]'",
     "build:prod": "webpack --config ./build/webpack.config.js --mode production",
     "build:dev": "webpack --config ./build/webpack.config.js --mode development",
     "dev": "webpack-dev-server --config ./build/webpack.config.js --mode development",
