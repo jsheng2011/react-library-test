@@ -45,7 +45,7 @@ module.exports = {
     plugins: [
         new HtmlWebPackPlugin({
             template: path.resolve(__dirname, '../app/index.html'),
-            filename: './index.html'
+            filename: 'index.html'
         }),
         // new MiniCssExtractPlugin({
         //     filename: '[name].css',
@@ -69,6 +69,6 @@ module.exports = {
     },
     devtool: 'source-map',
     output:{
-        publicPath: '.'
+        publicPath: './'
     }
 };
