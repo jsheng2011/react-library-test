@@ -2,14 +2,11 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 //     MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 let path = require('path');
-
+console.log("process.env.PUBLIC_PATH", process.env.PUBLIC_PATH);
 module.exports = {
     entry: {
         app: path.resolve(__dirname, '../app/index.js')
         // app: 'src/index.js'
-    },
-    output: {
-        publicPath: '/'
     },
     module: {
         rules: [
@@ -69,6 +66,6 @@ module.exports = {
     },
     devtool: 'source-map',
     output:{
-        publicPath: './'
+        publicPath: process.env.PUBLIC_PATH? process.env.PUBLIC_PATH : '/'
     }
 };
